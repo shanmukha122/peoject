@@ -1,0 +1,34 @@
+# Employee Information
+employee:
+  id: 12345
+  name: John Doe
+  position: Software Engineer
+  active: true
+  skills:
+    - Python
+    - Docker
+    - Kubernetes
+  address:
+    street: 456 Tech Lane
+    city: Silicon Valley
+    zip: 94043
+  contact:
+    email: john.doe@example.com
+    phone: "+1-234-567-890"
+  projects:
+    - name: Project Alpha
+      role: Backend Developer
+      duration: 6 months
+    - name: Project Beta
+      role: DevOps Engineer
+      duration: 4 months
+  manager: &mgr
+    name: Jane Smith
+    position: Engineering Manager
+    contact:
+      email: jane.smith@example.com
+      phone: "+1-234-567-891"
+  department:
+    <<: *mgr
+    name: Cloud Infrastructure
+    location: San Francisco
